@@ -1,0 +1,12 @@
+{
+  "name": "stimulate",
+  "version": "0.0.1",
+  "description": "Library of useful controllers for Stimulus.js",
+  "main": "index.js",
+  "repository": "git@github.com:n4cr/stimulate.git",
+  "author": "Nasir Shadravan <nasir@semicolon.io>",
+  "license": "MIT",
+  "dependencies": {
+    "stimulus": "https://github.com/stimulusjs/dev-builds/archive/b8cc8c4/stimulus.tar.gz"
+  }
+}
