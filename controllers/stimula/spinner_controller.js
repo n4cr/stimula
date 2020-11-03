@@ -11,7 +11,6 @@ export default class extends ApplicationController {
 
     connect() {
         const size = this.hasSizeValue ? this.sizeValue : 40;
-        console.log(size)
         if (this.hasIconValue) {
             const img = document.createElement('img')
             img.src = this.urlValue;
@@ -27,7 +26,7 @@ export default class extends ApplicationController {
            `
             this.element.innerHTML = this.urlValue;
         }
-        this.loading();
+        this.loaded();
     }
 
     loading() {
@@ -35,6 +34,6 @@ export default class extends ApplicationController {
     }
 
     loaded() {
-        this.element.style.display = 'none'
+        this.element.style.display = 'none !important'
     }
 }
